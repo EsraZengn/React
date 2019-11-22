@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto Condensed, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding-bottom: 0.75em;
+}
+
+.city-container {
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 50px;
+  width: 30%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.weather-type {
+  margin-bottom: 0;
+}
+
+.description {
+  margin-top: 0px;
+}
