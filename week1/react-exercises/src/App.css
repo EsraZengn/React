@@ -16,6 +16,17 @@
   list-style: none;
 }
 
+.hobby-list li {
+  padding: 1em;
+  background-color: lightcyan;
+  display: 'inline-block';
+}
+
+.hobby-list li img {
+  height: 30px;
+  margin-right: 20px;
+}
+
 .customer-service {
   display: flex;
   flex-direction: row;
@@ -29,4 +40,29 @@
 
 .guarantee-img {
   height: 60px;
+}
+
+.feedback {
+  font-size: 1.5em;
+}
+
+.feedback-warning {
+  font-size: 1.5em;
+  color: red;
+}
+
+.count {
+  color: maroon;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.counter-btn {
+  width: 200px;
+  height: 2.5em;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
 }

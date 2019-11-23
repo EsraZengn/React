@@ -8,7 +8,11 @@ function Counter(props) {
 
   return (
     <div>
-      {count > 10 ? (feedback = `It's higher than 10!`) : (feedback = `Keep counting...`)}
+      {count > 10 ? (
+        <p className="feedback-warning">{(feedback = `It's higher than 10!`)}</p>
+      ) : (
+        <p className="feedback">{(feedback = `Keep counting...`)}</p>
+      )}
       <Count count={count} feedback={feedback}></Count>
       <Button text={props.btnText} onClick={() => setCount(count + 1)}></Button>
     </div>
