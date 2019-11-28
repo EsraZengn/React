@@ -5,7 +5,6 @@ import Counter from './components/Counter';
 import './App.css';
 
 function App() {
-  //const hobbies = ['Surfing', 'Rock climbing', 'Mountain biking', 'Breakdancing'];
   const hobbies = [
     {
       hobby: 'Surfing',
