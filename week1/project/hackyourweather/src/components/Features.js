@@ -1,11 +1,12 @@
 import React from 'react';
+import uuid from 'uuid';
 
 function Features({ features }) {
   return (
     <div>
       <ul>
         {features.map(feature => (
-          <li>{`${Object.keys(feature)}: ${Object.values(feature)}`}</li>
+          <li key={uuid()}>{feature}</li>
         ))}
       </ul>
     </div>
