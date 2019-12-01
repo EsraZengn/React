@@ -24,7 +24,7 @@ function App() {
   const getCityWeather = city => {
     if (city !== '') {
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}`,
       )
         .then(response => {
           if (!response.ok) {
