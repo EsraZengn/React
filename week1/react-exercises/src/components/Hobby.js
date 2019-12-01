@@ -1,9 +1,8 @@
 import React from 'react';
-import uuid from 'uuid';
 
 function Hobby({ title, icon }) {
   return (
-    <li key={uuid()}>
+    <li>
       <img src={icon} alt={'Not found'}></img>
       {title}
     </li>
