@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import City from './components/City';
 import SearchForm from './components/SearchForm';
-import uuid from 'uuid';
 
 // I assumed the temperature was in Kelvin and converted it to Celsius.
 const kelvinToCelsius = kelvin => (kelvin < 0 ? kelvin : kelvin - 273.15);
@@ -55,7 +54,7 @@ function App() {
       {errorMessage ? (
         <div className="error-div">{errorMessage}</div>
       ) : isObjectEmpty(weatherInfo) ? (
-        <div className='search-city-div'>Search for a city to display weather info</div>
+        <div className="search-city-div">Search for a city to display weather info</div>
       ) : (
         <City
           city={weatherInfo.name}
@@ -63,7 +62,6 @@ function App() {
           main={weatherInfo.weather[0].main}
           description={weatherInfo.weather[0].description}
           features={getTempAndLocation(weatherInfo)}
-          key={uuid()}
         />
       )}
     </div>
