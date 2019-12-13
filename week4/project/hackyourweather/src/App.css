@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto Condensed, sans-serif;
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding-bottom: 0.75em;
+}
+
+.error-div {
+  margin-top: 50px;
+  width: 30%;
+  height: 5em;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #b00020;
+  border-radius: 3px;
+  padding-top: 2em;
+}
+
+.search-city-div {
+  margin-top: 50px;
+}
+
+.city-container {
+  border: 1px solid #cccccc;
+  width: 100%;
+  text-align: left;
+  padding-left: 30px;
+  box-shadow: 1px 1px 4px -1px;
+  border-radius: 3px;
+}
+
+.weather-type {
+  margin-bottom: 0;
+}
+
+.description {
+  margin-top: 0px;
+}
+
+.city-input {
+  height: 3em;
+  border-radius: 1px;
+  border: 1px solid #cccccc;
+  padding-left: 1em;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.MuiButton-root {
+  height: 4em;
+}
+
+.MuiInputBase-root {
+  margin-right: 1em;
+}
