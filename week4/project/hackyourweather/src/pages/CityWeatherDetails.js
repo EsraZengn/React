@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
       margin: 0,
       left: 5,
       top: 30,
-      width: 90
+      width: 90,
     },
   },
 }));
@@ -60,7 +60,7 @@ function CityWeatherDetails() {
 
   useEffect(() => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&apikey=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}`,
+      `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&apikey=${process.env.REACT_APP_OPENWEATHERMAP_API_KEY}`,
     )
       .then(res => {
         if (!res.ok) {
@@ -120,4 +120,3 @@ function CityWeatherDetails() {
 }
 
 export default CityWeatherDetails;
-
